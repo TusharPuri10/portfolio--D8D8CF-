@@ -80,8 +80,6 @@ const last_posts = posts.slice(0, 3);
           </svg>
       </a>
   </div>
-  <a class="py-3 text-base" id="projects" href="/projects">Projects</a>
-  <a class="py-3 text-base" id="blog" href="/blog/">Blog</a>
   </div>
 
   <div>
@@ -108,8 +106,10 @@ const last_posts = posts.slice(0, 3);
     img="/post_img.webp"
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
-    badge="FOSS"
   />
+  <div class="flex justify-end mr-4">
+    <a class="py-3 text-base font-semibold hover:text-amber-700" id="projects" href="/projects">See All Projects...</a>
+  </div>
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
@@ -130,4 +130,7 @@ const last_posts = posts.slice(0, 3);
       </>
     ))
   }
+    <div class="flex justify-end mr-4">
+      <a class="py-3 text-base font-semibold hover:text-amber-700" id="projects" href="/blog">See All Blogs...</a>
+    </div>
 </BaseLayout>

@@ -3,49 +3,64 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Personal Projects</div>
   </div>
-
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Cloudstash"
+    img="/cloudstash.png"
+    desc="CloudStash is a cutting-edge cloud storage solution designed to revolutionize the way you manage and share digital assets. CloudStash leverages the power of React Three Fiber, Next.js, TypeScript, and AWS S3 to provide users with a seamless and secure cloud storage experience."
+    url="https://github.com/TusharPuri10/cloudstash"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Twitter Depression Analyzer"
+    img="/twitterDepression.png"
+    desc="This is a Python-based project for analyzing depressive tweets using Natural Language Processing (NLP) techniques. The goal of this project is to explore how people express their emotions related to depression on social media and to identify patterns and trends in their language usage."
+    url="https://github.com/TusharPuri10/DepressiveTweetsAnalysis"
   />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Nextjs-reCAPTCHA-v2-template"
+    img="/recaptcha.png"
+    desc="This is a template website built with the latest version of Next.js and integrated with reCaptcha V2 for enhanced security. The project also utilizes Tailwind CSS for styling and includes components from Shadcn UI for a sleek and modern user interface. The goal of this project is to provide a starting point for developers."
+    url="https://github.com/TusharPuri10/nextjs-reCAPTCHA-v2-template"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Todo Website"
+    img="/todo.png"
+    desc="This is a simple Todo app built with React, Recoil, and Material-UI (MUI). Add new tasks, Mark tasks as completed, Remove completed tasks with clean and user-friendly interface."
+    url="https://github.com/TusharPuri10/TodoApp"
+  />
+  <div class="divider mb-10"></div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">College Projects</div>
   </div>
-
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Tubeify"
+    img="/tubeify.jpg"
+    desc="Tubeify is a web application built using React.js and Django that provides a convenient way to summarize YouTube videos and generate quizzes based on their content. The application utilizes a custom fine-tuned model for video summarization and integrates with the OpenAI API for quiz generation."
+    url="https://github.com/TusharPuri10/Tubeify"
+    badge="Developing"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+  title="DDOSwatcher"
+  img="/Ddoswatcher.png"
+  desc="The DDoS Watcher is a smart combination of advanced tech tools. It uses machine learning, cool data graphics, and a sleek interface to defend against DDoS attacks. It's like having a superhero for your online security, always on the lookout for the latest threats."
+  url="https://github.com/TusharPuri10/DDOSwatcher"
+  badge="Developing"
+/>
+<div class="divider my-0"></div>
+<HorizontalCard
+title="Inventory Managemnet System"
+img="/inventory.png"
+desc="This Java-based project aims to create a user-friendly and scalable Inventory Management System for a kitchen material whole-seller, addressing issues like stockouts and overstocking. It includes features such as product management, inventory tracking, order processing, and reporting to improve accuracy, reduce costs, and enhance overall productivity."
+url="https://github.com/TusharPuri10/InventoryManagementr"
+badge="not maintained"
+/>
+<div class="divider my-0"></div>
 </BaseLayout>

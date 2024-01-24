@@ -15,14 +15,15 @@ const last_posts = posts.slice(0, 3);
     <div class="flex flex-row justify-between">
       <div>
         <div class="text-md py-1">Hey there 👋</div>
-        <div class="text-4xl font-bold">I'm Tushar Puri</div>
-        <div class="text-2xl py-3 font-bold">Full Stack Developer 🛠️ | AI & LLM Enthusiast🤖 </div>
+        <div class="md:text-4xl text-3xl font-bold">I'm Tushar Puri</div>
+        <div class="md:text-2xl text-lg py-3 font-bold">Full Stack Developer | AI & LLM Enthusiast</div>
+        <div class="text-md hidden md:block"> I'am a 3rd year CS grad and who enjoys <span class="font-semibold">web development</span> ever since I built my first <span class="font-semibold">TypeScript</span> project "cloudstash".</div>
       </div>
       <div class="w-fit">
         <a href="/">
-          <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
-            <div class="w-[8.5rem]">
-              <Image class="mask mask-circle" format="webp" width={280} height={280} src="/profile.jpg" alt="Profile image" />
+          <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto md:pl-0 pl-10">
+            <div class="w-[10rem]">
+              <Image class="rounded-xl border-2" format="webp" width={350} height={350} src="/profile.jpg" alt="Profile image" />
             </div>
           </div>
         </a>
@@ -30,11 +31,9 @@ const last_posts = posts.slice(0, 3);
     </div>
     <div class="py-2">
       <text class="text-md">
-        I am a 3rd year CS grad and I've been enjoying web development ever since <br> I built my first TypeScript project "cloudstash". <br> <br>
-        The recent trend in Large Language Models (LLM) has also sparked my interest in the field of AI and <br> I've been working on a few projects in that domain.
-        I'm currently on the lookout for internships and research opportunities in the field of AI and web development. <br> <br>
-        I'd especially love to work at a place where I can work with a tight knit team and make an impact quickly. <br>
-        If you're looking for someone like me, feel free to reach out
+        <div class="text-md md:hidden block pb-2"> I'am a 3rd year CS grad and who enjoys <span class="font-semibold">web development</span> ever since I built my first <span class="font-semibold">TypeScript</span> project "cloudstash". </div>
+        The recent trend in <span class="font-semibold">Large Language Models (LLM)</span> has also sparked my interest in the field of AI and I've been working on a few projects in that domain.
+        I'm currently on the lookout for internships and research opportunities in the field of AI and web development. If you're looking for someone like me, feel free to reach out
       </text>
     </div>
     <div class="social-icons pt-3 flex self-center justify-left sticky bottom-0">

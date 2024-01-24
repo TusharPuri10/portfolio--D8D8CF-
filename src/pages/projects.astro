@@ -5,8 +5,16 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Personal Projects</div>
+    <div class="text-3xl w-full font-bold mb-5">All Projects</div>
   </div>
+  <HorizontalCard
+    title="Tubeify"
+    img="/tubeify.jpg"
+    desc="Tubeify is a web application built using React.js and Django that provides a convenient way to summarize YouTube videos and generate quizzes based on their content. The application utilizes a custom fine-tuned model for video summarization and integrates with the OpenAI API for quiz generation."
+    url="https://github.com/TusharPuri10/Tubeify"
+    badge="Developing"
+  />
+  <div class="divider my-0"></div>
   <HorizontalCard
     title="Cloudstash"
     img="/cloudstash.png"
@@ -34,13 +42,5 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     desc="This is a simple Todo app built with React, Recoil, and Material-UI (MUI). Add new tasks, Mark tasks as completed, Remove completed tasks with clean and user-friendly interface."
     url="https://github.com/TusharPuri10/TodoApp"
   />
-  <div class="divider mb-10"></div>
-  <HorizontalCard
-    title="Tubeify"
-    img="/tubeify.jpg"
-    desc="Tubeify is a web application built using React.js and Django that provides a convenient way to summarize YouTube videos and generate quizzes based on their content. The application utilizes a custom fine-tuned model for video summarization and integrates with the OpenAI API for quiz generation."
-    url="https://github.com/TusharPuri10/Tubeify"
-    badge="Developing"
-  />
-<div class="divider my-0"></div>
+  <div class="divider my-0"></div>
 </BaseLayout>

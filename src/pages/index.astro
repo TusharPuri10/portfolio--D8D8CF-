@@ -12,28 +12,32 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-10 mt-5">
-    <div class="flex flex-row">
+    <div class="flex flex-row justify-between">
       <div>
-        <div class="text-xl py-1">Hey there 👋</div>
-        <div class="text-5xl font-bold">I'm Tushar Puri</div>
-        <div class="text-3xl py-3 font-bold">Full Stack Developer 🛠️ | AI & LLM Enthusiast🤖 </div>
+        <div class="text-md py-1">Hey there 👋</div>
+        <div class="text-4xl font-bold">I'm Tushar Puri</div>
+        <div class="text-2xl py-3 font-bold">Full Stack Developer 🛠️ | AI & LLM Enthusiast🤖 </div>
       </div>
-      <div class="w-fit mx-auto mt-5 mb-6">
+      <div class="w-fit">
         <a href="/">
           <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
             <div class="w-[8.5rem]">
-              <Image class="mask mask-circle" format="webp" width={300} height={300} src="/profile.jpg" alt="Profile image" />
+              <Image class="mask mask-circle" format="webp" width={280} height={280} src="/profile.jpg" alt="Profile image" />
             </div>
           </div>
         </a>
       </div>
     </div>
     <div class="py-2">
-      <text class="text-lg">
-        I am a 3rd year CS grad. My interest lies in the domain of Web Development, Artificial Intelligence & Machine Learning. Currently I am looking for internship opportunities.
+      <text class="text-md">
+        I am a 3rd year CS grad and I've been enjoying web development ever since <br> I built my first TypeScript project "cloudstash". <br> <br>
+        The recent trend in Large Language Models (LLM) has also sparked my interest in the field of AI and <br> I've been working on a few projects in that domain.
+        I'm currently on the lookout for internships and research opportunities in the field of AI and web development. <br> <br>
+        I'd especially love to work at a place where I can work with a tight knit team and make an impact quickly. <br>
+        If you're looking for someone like me, feel free to reach out
       </text>
     </div>
-    <div class="social-icons pt-1 flex self-center justify-left sticky bottom-0">
+    <div class="social-icons pt-3 flex self-center justify-left sticky bottom-0">
       <p class="font-semibold">Let's connect : </p>
       <a href="https://github.com/TusharPuri10" target="_blank" class="mx-3" aria-label="Github" title="Github">
           <svg
@@ -79,6 +83,18 @@ const last_posts = posts.slice(0, 3);
               ></path>
           </svg>
       </a>
+      <a
+          href="mailto:iamtusharpuri@gmail.com"
+          target="_blank"
+          class="mx-3"
+          aria-label="Mail"
+          title="Mail"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="25" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1"><path d="M 3.460938 6.5625 L 26.539062 6.5625 L 26.539062 24.707031 L 3.460938 24.707031 Z M 3.460938 6.5625 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#id1)"><path fill="rgb(6.269836%, 5.879211%, 5.099487%)" d="M 24.230469 11.101562 L 15 16.769531 L 5.769531 11.101562 L 5.769531 8.832031 L 15 14.503906 L 24.230469 8.832031 Z M 24.230469 6.5625 L 5.769531 6.5625 C 4.492188 6.5625 3.472656 7.578125 3.472656 8.832031 L 3.460938 22.441406 C 3.460938 23.695312 4.492188 24.707031 5.769531 24.707031 L 24.230469 24.707031 C 25.507812 24.707031 26.539062 23.695312 26.539062 22.441406 L 26.539062 8.832031 C 26.539062 7.578125 25.507812 6.5625 24.230469 6.5625 " fill-opacity="1" fill-rule="nonzero"/></g></svg>
+      </a>
+  </div>
+  <div class="pt-4">
+    <span class="font-semibold ">Mail id:</span> iamtusharpuri@gmail.com
   </div>
   </div>
 
@@ -90,7 +106,7 @@ const last_posts = posts.slice(0, 3);
     title="Tubeify"
     img="/tubeify.jpg"
     desc="Tubeify is a web application built using React.js and Django that provides a convenient way to summarize YouTube videos and generate quizzes based on their content. The application utilizes a custom fine-tuned model for video summarization and integrates with the OpenAI API for quiz generation."
-    url="https://github.com/TusharPuri10/Tubeify"
+    url="#"
     badge="Developing"
   />
   <div class="divider my-0"></div>
@@ -107,9 +123,15 @@ const last_posts = posts.slice(0, 3);
     desc="This is a Python-based project for analyzing depressive tweets using Natural Language Processing (NLP) techniques. The goal of this project is to explore how people express their emotions related to depression on social media and to identify patterns and trends in their language usage."
     url="https://github.com/TusharPuri10/DepressiveTweetsAnalysis"
   />
-  <div class="flex justify-end mr-4">
-    <a class="py-3 text-base font-semibold hover:text-amber-700" id="projects" href="/projects">See All Projects...</a>
-  </div>
+  <div class="divider mb-2"></div>
+  <!-- <div class="flex justify-end mr-4">
+    <a class="py-3 text-base font-semibold hover:text-amber-700" >See All Projects...</a>
+  </div> -->
+  <button class="group group-hover:before:duration-500 group-hover:after:duration-1000 after:duration-500 hover:border-sky-300  duration-500 before:duration-500 hover:duration-500 underline underline-offset-2    hover:after:-left-2 hover:before:top-8 hover:before:left-16 hover:after:scale-150 hover:after:blur-none hover:before:-bottom-8 hover:before:blur-none hover:bg-sky-300 hover:underline hover:underline-offset-4  origin-center hover:decoration-2 hover:text-sky-900 relative bg-sky-800 h-12 w-full border text-right px-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:left-1 before:top-1 before:z-10 before:bg-sky-400 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-cyan-600 after:left-8 after:top-3 after:rounded-full after:blur" id="projects"
+  onclick="window.location.href='/projects'">
+    See All Projects...
+  </button>
+  
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
@@ -130,7 +152,8 @@ const last_posts = posts.slice(0, 3);
       </>
     ))
   }
-    <div class="flex justify-end mr-4">
-      <a class="py-3 text-base font-semibold hover:text-amber-700" id="projects" href="/blog">See All Blogs...</a>
-    </div>
+    <button class="group group-hover:before:duration-500 group-hover:after:duration-1000 after:duration-500 hover:border-sky-300  duration-500 before:duration-500 hover:duration-500 underline underline-offset-2    hover:after:-left-2 hover:before:top-8 hover:before:left-16 hover:after:scale-150 hover:after:blur-none hover:before:-bottom-8 hover:before:blur-none hover:bg-sky-300 hover:underline hover:underline-offset-4  origin-center hover:decoration-2 hover:text-sky-900 relative bg-sky-800 h-12 w-full border text-right px-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:left-1 before:top-1 before:z-10 before:bg-sky-400 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-cyan-600 after:left-8 after:top-3 after:rounded-full after:blur"
+    onclick="window.location.href='/blog'">
+      See All Blogs...
+    </button>
 </BaseLayout>

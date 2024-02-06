@@ -1,6 +1,6 @@
 ---
 title: "Bridging the Divide: Logistic Regression as a Fundamental Component of Neural Networks part-2"
-description: "The article explores the fusion of logistic regression and neural networks in solving complex problems, using practical code examples. Logistic regression simplifies decision-making in neural networks, and the provided code demonstrates image classification using this integration. It highlights logistic regression as a crucial technique for both beginners and experienced practitioners in the field of artificial intelligence and machine learning."
+description: "The article explores the fusion of logistic regression and neural networks in solving complex problems, using practical code examples."
 pubDate: "Nov 4 2023"
 heroImage: "/blog-2.webp"
 tags: ["Deep Learning","Logistic Regression"]

@@ -1,6 +1,6 @@
 ---
 title: "Bridging the Divide: Logistic Regression as a Fundamental Component of Neural Networks"
-description: "The article explores the synergy between logistic regression and neural networks in machine learning. Logistic regression's simplicity in binary classification complements the complexity of neural networks. The neural network's hidden layers handle intricate features, while logistic regression in the output layer simplifies decision-making, illustrated through an image classification example"
+description: "The article explores the synergy between logistic regression and neural networks in machine learning."
 pubDate: "Nov 1 2023"
 heroImage: "/blog-2.webp"
 tags: ["Deep Learning","Logistic Regression"]

@@ -1,6 +1,6 @@
 ---
 title: "Building a Machine Learning Model with Text and Metadata: A Comprehensive Guide"
-description: "The guide covers building a product length prediction model from catalog metadata. It includes preprocessing, feature extraction, and model selection. Additional tips involve data exploration, handling imbalance, scaling features, cross-validation, interpretability, ensemble methods, monitoring, handling missing data, regularization, and documentation for a robust model."
+description: "The guide covers building a product length prediction model from catalog metadata."
 pubDate: "Oct 30 2023"
 heroImage: "/blog-1.jpg"
 tags: ["Machine Learnign","NLP"]

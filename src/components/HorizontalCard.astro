@@ -1,5 +1,5 @@
 ---
-const { title, img, desc, p1, p2, p3, badge, tags, url,  github, live , target = "_blank"} = Astro.props;
+const { title, img, desc, p1, p2, p3, badge, tags, url,  github, live , target= "_blank", colab} = Astro.props;
 import { Image } from "astro:assets";
 ---
 
@@ -26,6 +26,7 @@ import { Image } from "astro:assets";
           {badge && <div class="badge badge-secondary mx-1">{badge}</div>}
           {github && <a href={github} target={target} class="badge badge-secondary mx-1">github</a>}
           {live && <a href={live} target={target} class="badge badge-secondary mx-1">live</a>}
+          {colab && <a href={colab} target={target} class="badge badge-secondary mx-1">colab</a>}
         </h1>
         {desc==="" && <ul class="text-1xl py-1 list-disc ml-6">
           <li>{p1}</li>

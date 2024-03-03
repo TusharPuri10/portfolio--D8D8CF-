@@ -23,10 +23,10 @@ import { Image } from "astro:assets";
       <div class="grow w-full">
         <h1 class="text-xl font-bold">
           {title}
-          {badge && <div class="badge badge-secondary mx-1">{badge}</div>}
           {github && <a href={github} target={target} class="badge badge-secondary mx-1">github</a>}
           {live && <a href={live} target={target} class="badge badge-secondary mx-1">live</a>}
           {colab && <a href={colab} target={target} class="badge badge-secondary mx-1">colab</a>}
+          {badge && <div class="badge badge-secondary mx-1">{badge}</div>}
         </h1>
         {desc==="" && <ul class="text-1xl py-1 list-disc ml-6">
           <li>{p1}</li>

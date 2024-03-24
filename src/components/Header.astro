@@ -1,8 +1,15 @@
-<div
-  class="sticky lg:hidden top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-[#D8D8CF] text-base-content shadow-sm"
->
+<div class="sticky lg:hidden top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-[#D8D8CF] text-base-content shadow-sm">
   <div class="navbar">
     <div class="navbar-start">
+      <!-- Back Button Icon -->
+      <a href="/" class="text-lg p-2" id="backButtonContainer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <line x1="5" y1="12" x2="11" y2="18" />
+          <line x1="5" y1="12" x2="11" y2="6" />
+        </svg>
+      </a>
     </div>  
     <div class="navbar-center">
       <a class="btn btn-ghost normal-case text-xl" href="/">Tushar Puri ⚡️</a>
@@ -11,3 +18,20 @@
     </div>
   </div>
 </div>
+
+<script>
+  // JavaScript code to toggle visibility of the back button based on current path
+  document.addEventListener("DOMContentLoaded", function() {
+    var backButtonContainer = document.getElementById("backButtonContainer");
+    if (backButtonContainer) {
+      // Check if the current path is "/"
+      if (window.location.pathname === "/") {
+        // Hide the back button if on the root path
+        backButtonContainer.style.display = "none";
+      } else {
+        // Show the back button if not on the root path
+        backButtonContainer.style.display = "block";
+      }
+    }
+  });
+</script>
